@@ -1,0 +1,21 @@
+body{
+    
+    
+}
+h1{
+    text-align: center;
+}
+img{
+    height: 250px;
+    width: 400px;
+    border-radius: 5px;
+    padding: 5px;
+}
+table{
+    text-align: center;
+    margin: auto;
+}
+td{
+    padding: 0 15px 0 15px;
+    font-size: 24px;
+}
