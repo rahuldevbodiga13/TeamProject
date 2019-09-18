@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Food Menu</title>
+        <link rel="stylesheet" type="text/css" href="FoodMenuStyle.css">
     </head>
     <body>
         <h1>Choose your Dish</h1>
@@ -9,7 +10,7 @@
             <h2>Tiffins:</h2>
             <table>
                 <tr>
-                    <td><img src="Images/Idli.jpg" alt="Idli">Idli</td>
+                    <td id="idli">Idli <br><img src="Images/Idli.jpg" alt="Idli"></td>
                     <td>25</td>
                     <td>
                         <button onclick="decrement()">-</button>
@@ -18,7 +19,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><img src="Images/Wada.jpg" alt="Wada">Wada</td>
+                    <td>Wada <br><img src="Images/Wada.jpg" alt="Wada"></td>
                     <td>25</td>
                     <td>
                         <button onclick="decrement()">-</button>
@@ -28,7 +29,7 @@
                 </tr>
                                              
                 <tr>
-                    <td><img src="Images/Puri.jpg" alt="Puri">Puri</td>
+                    <td>Puri <br><img src="Images/Puri.jpg" alt="Puri"></td>
                     <td>25</td>
                     <td>
                         <button onclick="decrement()">-</button>
@@ -37,7 +38,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><img src="Images/Dosa.jpg" alt="Dosa">Dosa</td>
+                    <td>Dosa <br><img src="Images/Dosa.jpg" alt="Dosa"></td>
                     <td>25</td>
                     <td>
                         <button onclick="decrement()">-</button>
@@ -46,7 +47,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><img src="Images/Bonda.jpg" alt="Bonda">Bonda</td>
+                    <td>Bonda <br><img src="Images/Bonda.jpg" alt="Bonda"></td>
                     <td>25</td>
                     <td>
                         <button onclick="decrement()">-</button>
@@ -60,7 +61,7 @@
             <h2>Lunch Menu</h2>
             <table>
                 <tr>
-                    <td><img src="Images/ChickenBiryani.jpg" alt="ChickenBiryani">ChickenBiryani</td>
+                    <td>Chicken Biryani <br><img src="Images/ChickenBiryani.jpg" alt="ChickenBiryani"></td>
                     <td>130</td>
                     <td>
                         <button onclick="decrement()">-</button>
@@ -69,7 +70,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><img src="Images/VegBiryani.jpg" alt="VegBiryani">VegBiryani</td>
+                    <td>Veg Biryani <br><img src="Images/VegBiryani.jpg" alt="VegBiryani"></td>
                     <td>100</td>
                     <td>
                         <button onclick="decrement()">-</button>
@@ -78,7 +79,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><img src="Images/VegFriedRice.jpg" alt="VegFriedRice">VegFriedRice</td>
+                    <td>Veg Fried Rice <br><img src="Images/VegFriedRice.jpg" alt="VegFriedRice"></td>
                     <td>40</td>
                     <td>
                             <button onclick="decrement()">-</button>
@@ -87,7 +88,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><img src="Images/VegManchuria.jpg" alt="VegManchuria"></td>
+                    <td>Veg Manchuria <br><img src="Images/VegManchuria.jpg" alt="VegManchuria"></td>
                     <td>40</td>
                     <td>
                         <button onclick="decrement()">-</button>
@@ -96,7 +97,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><img src="Images/ChickenFriedRice.jpg" alt="ChickenFriedRice">ChickenFriedRice</td>
+                    <td>Chicken Fried Rice <br><img src="Images/ChickenFriedRice.jpg" alt="ChickenFriedRice"></td>
                     <td>60</td>
                     <td>
                         <button onclick="decrement()">-</button>
@@ -105,7 +106,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><img src="Images/ChickenNoodles.jpg" alt="ChickenNoodles">ChickenNoodles</td>
+                    <td>Chicken Noodles <br><img src="Images/ChickenNoodles.jpg" alt="ChickenNoodles"></td>
                     <td>60</td>
                     <td>
                         <button onclick="decrement()">-</button>
@@ -114,7 +115,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><img src="Images/ManchurianRice.jpg" alt="ManchurianRice">ManchurianRice</td>
+                    <td>Manchurian Rice <br><img src="Images/ManchurianRice.jpg" alt="ManchurianRice"></td>
                     <td>50</td>
                     <td>
                         <button onclick="decrement()">-</button>
@@ -123,7 +124,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><img src="Images/ManchurianNoodles.jpg" alt="ManchurianNoodles">ManchurianNoodles</td>
+                    <td>Manchurian Noodles <br><img src="Images/ManchurianNoodles.jpg" alt="ManchurianNoodles"></td>
                     <td>50</td>
                     <td>
                     <button onclick="decrement()">-</button>
@@ -132,7 +133,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><img src="Images/VegNoodles.jpg" alt="VegNoodles">VegNoodles</td>
+                    <td>Veg Noodles <br><img src="Images/VegNoodles.jpg" alt="VegNoodles"></td>
                     <td>40</td>
                     <td>
                         <button onclick="decrement()">-</button>
@@ -141,7 +142,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><img src="Images/EggNoodles.jpg" alt="EggNoodles">EggNoodles</td>
+                    <td>Egg Noodles <br><img src="Images/EggNoodles.jpg" alt="EggNoodles"></td>
                     <td>50</td>
                     <td>
                         <button onclick="decrement()">-</button>
@@ -150,7 +151,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><img src="Images/EggFriedRice.jpg" alt="EggFriedRice">EggFriedRice</td>
+                    <td>Egg Fried Rice <br><img src="Images/EggFriedRice.jpg" alt="EggFriedRice"></td>
                     <td>50</td>
                     <td>
                         <button onclick="decrement()">-</button>
@@ -159,7 +160,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><img src="Images/Meals.jpg" alt="Meals">Meals</td>
+                    <td>Meals <br><img src="Images/Meals.jpg" alt="Meals"></td>
                     <td>50</td>
                     <td>
                     <button onclick="decrement()">-</button>
@@ -168,7 +169,7 @@
                 </td>
                 </tr>
                 <tr>
-                    <td><img src="Images/Coke.jpg" alt="Coke">Coke</td>
+                    <td>Coke <br><img src="Images/Coke.jpg" alt="Coke"></td>
                     <td>20</td>
                     <td>
                         <button onclick="decrement()">-</button>
