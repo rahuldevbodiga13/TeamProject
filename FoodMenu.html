@@ -5,181 +5,191 @@
         <link rel="stylesheet" type="text/css" href="FoodMenuStyle.css">
     </head>
     <body>
-        <h1>Choose your Dish</h1>
+        <h1>CHOOSE YOUR DISH</h1>
         <div id="tiffins">
-            <h2>Tiffins:</h2>
+            <h2>TIFFINS:</h2>
             <table>
                 <tr>
-                    <td id="idli">Idli <br><img src="Images/Idli.jpg" alt="Idli"></td>
+                    <th>ITEM</th>
+                    <th>COST</th>
+                    <th>QUANTITY</th>
+                </tr>
+                <tr>
+                    <td class="item-name">Idli <br><img src="Images/Idli.jpg" alt="Idli"></td>
                     <td>25</td>
                     <td>
-                        <button onclick="decrement()">-</button>
-                            <span id="quantity">0</span>
-                        <button onclick="increment()">+</button>
+                        <button onclick="decrement('idli-qty')">-</button>
+                            <span id="idli-qty">0</span>
+                        <button onclick="increment('idli-qty')">+</button>
                     </td>
                 </tr>
                 <tr>
-                    <td>Wada <br><img src="Images/Wada.jpg" alt="Wada"></td>
+                    <td class="item-name">Wada <br><img src="Images/Wada.jpg" alt="Wada"></td>
                     <td>25</td>
                     <td>
-                        <button onclick="decrement()">-</button>
-                            <span id="quantity">0</span>
-                        <button onclick="increment()">+</button>
+                        <button onclick="decrement('wada-qty')">-</button>
+                            <span id="wada-qty">0</span>
+                        <button onclick="increment('wada-qty')">+</button>
                     </td>
                 </tr>
                                              
                 <tr>
-                    <td>Puri <br><img src="Images/Puri.jpg" alt="Puri"></td>
+                    <td class="item-name">Puri <br><img src="Images/Puri.jpg" alt="Puri"></td>
                     <td>25</td>
                     <td>
-                        <button onclick="decrement()">-</button>
-                            <span id="quantity">0</span>
-                        <button onclick="increment()">+</button>
+                        <button onclick="decrement('puri-qty')">-</button>
+                            <span id="puri-qty">0</span>
+                        <button onclick="increment('puri-qty')">+</button>
                     </td>
                 </tr>
                 <tr>
-                    <td>Dosa <br><img src="Images/Dosa.jpg" alt="Dosa"></td>
+                    <td class="item-name">Dosa <br><img src="Images/Dosa.jpg" alt="Dosa"></td>
                     <td>25</td>
                     <td>
-                        <button onclick="decrement()">-</button>
-                            <span id="quantity">0</span>
-                        <button onclick="increment()">+</button>
+                        <button onclick="decrement('dosa-qty')">-</button>
+                            <span id="dosa-qty">0</span>
+                        <button onclick="increment('dosa-qty')">+</button>
                     </td>
                 </tr>
                 <tr>
-                    <td>Bonda <br><img src="Images/Bonda.jpg" alt="Bonda"></td>
+                    <td class="item-name">Bonda <br><img src="Images/Bonda.jpg" alt="Bonda"></td>
                     <td>25</td>
                     <td>
-                        <button onclick="decrement()">-</button>
-                            <span id="quantity">0</span>
-                        <button onclick="increment()">+</button>
+                        <button onclick="decrement('bonda-qty')">-</button>
+                            <span id="bonda-qty">0</span>
+                        <button onclick="increment('bonda-qty')">+</button>
                     </td>
                 </tr>
             </table>
         </div>
         <div id="Lunch">
-            <h2>Lunch Menu</h2>
+            <h2>LUNCH MENU</h2>
             <table>
                 <tr>
-                    <td>Chicken Biryani <br><img src="Images/ChickenBiryani.jpg" alt="ChickenBiryani"></td>
+                    <th>ITEM</th>
+                    <th>COST</th>
+                    <th>QUANTITY</th>
+                </tr>
+                <tr>
+                    <td class="item-name">Chicken Biryani <br><img src="Images/ChickenBiryani.jpg" alt="ChickenBiryani"></td>
                     <td>130</td>
                     <td>
-                        <button onclick="decrement()">-</button>
-                            <span id="quantity">0</span>
-                        <button onclick="increment()">+</button>
+                        <button onclick="decrement('chknbr-qty')">-</button>
+                            <span id="chknbr-qty">0</span>
+                        <button onclick="increment('chknbr-qty')">+</button>
                     </td>
                 </tr>
                 <tr>
-                    <td>Veg Biryani <br><img src="Images/VegBiryani.jpg" alt="VegBiryani"></td>
+                    <td class="item-name">Veg Biryani <br><img src="Images/VegBiryani.jpg" alt="VegBiryani"></td>
                     <td>100</td>
                     <td>
-                        <button onclick="decrement()">-</button>
-                            <span id="quantity">0</span>
-                        <button onclick="increment()">+</button>
+                        <button onclick="decrement('vegbr')">-</button>
+                            <span id="vegbr">0</span>
+                        <button onclick="increment('vegbr')">+</button>
                     </td>
                 </tr>
                 <tr>
-                    <td>Veg Fried Rice <br><img src="Images/VegFriedRice.jpg" alt="VegFriedRice"></td>
+                    <td class="item-name">Veg Fried Rice <br><img src="Images/VegFriedRice.jpg" alt="VegFriedRice"></td>
                     <td>40</td>
                     <td>
-                            <button onclick="decrement()">-</button>
-                            <span id="quantity">0</span>
-                        <button onclick="increment()">+</button>
+                            <button onclick="decrement('vegfr-qty')">-</button>
+                            <span id="vegfr-qty">0</span>
+                        <button onclick="increment('vegfr-qty')">+</button>
                     </td>
                 </tr>
                 <tr>
-                    <td>Veg Manchuria <br><img src="Images/VegManchuria.jpg" alt="VegManchuria"></td>
+                    <td class="item-name">Veg Manchuria <br><img src="Images/VegManchuria.jpg" alt="VegManchuria"></td>
                     <td>40</td>
                     <td>
-                        <button onclick="decrement()">-</button>
-                            <span id="quantity">0</span>
-                        <button onclick="increment()">+</button>
+                        <button onclick="decrement('vegm-qty')">-</button>
+                            <span id="vegm-qty">0</span>
+                        <button onclick="increment('vegm-qty')">+</button>
                     </td>
                 </tr>
                 <tr>
-                    <td>Chicken Fried Rice <br><img src="Images/ChickenFriedRice.jpg" alt="ChickenFriedRice"></td>
+                    <td class="item-name">Chicken Fried Rice <br><img src="Images/ChickenFriedRice.jpg" alt="ChickenFriedRice"></td>
                     <td>60</td>
                     <td>
-                        <button onclick="decrement()">-</button>
-                            <span id="quantity">0</span>
-                        <button onclick="increment()">+</button>
+                        <button onclick="decrement('chkfr-qty')">-</button>
+                            <span id="chkfr-qty">0</span>
+                        <button onclick="increment('chkfr-qty')">+</button>
                     </td>
                 </tr>
                 <tr>
-                    <td>Chicken Noodles <br><img src="Images/ChickenNoodles.jpg" alt="ChickenNoodles"></td>
+                    <td class="item-name">Chicken Noodles <br><img src="Images/ChickenNoodles.jpg" alt="ChickenNoodles"></td>
                     <td>60</td>
                     <td>
-                        <button onclick="decrement()">-</button>
-                            <span id="quantity">0</span>
-                        <button onclick="increment()">+</button>
+                        <button onclick="decrement('chkn-qty')">-</button>
+                            <span id="chkn-qty">0</span>
+                        <button onclick="increment('chkn-qty')">+</button>
                     </td>
                 </tr>
                 <tr>
-                    <td>Manchurian Rice <br><img src="Images/ManchurianRice.jpg" alt="ManchurianRice"></td>
+                    <td  class="item-name">Manchurian Rice <br><img src="Images/ManchurianRice.jpg" alt="ManchurianRice"></td>
                     <td>50</td>
                     <td>
-                        <button onclick="decrement()">-</button>
-                            <span id="quantity">0</span>
-                        <button onclick="increment()">+</button>
+                        <button onclick="decrement('manrc-qty')">-</button>
+                            <span id="manrc-qty">0</span>
+                        <button onclick="increment('manrc-qty')">+</button>
                     </td>
                 </tr>
                 <tr>
-                    <td>Manchurian Noodles <br><img src="Images/ManchurianNoodles.jpg" alt="ManchurianNoodles"></td>
+                    <td class="item-name">Manchurian Noodles <br><img src="Images/ManchurianNoodles.jpg" alt="ManchurianNoodles"></td>
                     <td>50</td>
                     <td>
-                    <button onclick="decrement()">-</button>
-                        <span id="quantity">0</span>
-                    <button onclick="increment()">+</button>
+                    <button onclick="decrement('mno-qty')">-</button>
+                        <span id="mno-qty">0</span>
+                    <button onclick="increment('mno-qty')">+</button>
                     </td>
                 </tr>
                 <tr>
-                    <td>Veg Noodles <br><img src="Images/VegNoodles.jpg" alt="VegNoodles"></td>
+                    <td class="item-name">Veg Noodles <br><img src="Images/VegNoodles.jpg" alt="VegNoodles"></td>
                     <td>40</td>
                     <td>
-                        <button onclick="decrement()">-</button>
-                            <span id="quantity">0</span>
-                        <button onclick="increment()">+</button>
+                        <button onclick="decrement('vegn-qty')">-</button>
+                            <span id="vegn-qty">0</span>
+                        <button onclick="increment('vegn-qty')">+</button>
                     </td>
                 </tr>
                 <tr>
-                    <td>Egg Noodles <br><img src="Images/EggNoodles.jpg" alt="EggNoodles"></td>
+                    <td class="item-name">Egg Noodles <br><img src="Images/EggNoodles.jpg" alt="EggNoodles"></td>
                     <td>50</td>
                     <td>
-                        <button onclick="decrement()">-</button>
-                            <span id="quantity">0</span>
-                        <button onclick="increment()">+</button>
+                        <button onclick="decrement('eggn-qty')">-</button>
+                            <span id="eggn-qty">0</span>
+                        <button onclick="increment('eggn-qty')">+</button>
                     </td>
                 </tr>
                 <tr>
-                    <td>Egg Fried Rice <br><img src="Images/EggFriedRice.jpg" alt="EggFriedRice"></td>
+                    <td class="item-name">Egg Fried Rice <br><img src="Images/EggFriedRice.jpg" alt="EggFriedRice"></td>
                     <td>50</td>
                     <td>
-                        <button onclick="decrement()">-</button>
-                            <span id="quantity">0</span>
-                        <button onclick="increment()">+</button>
+                        <button onclick="decrement('eggfr-qty')">-</button>
+                            <span id="eggfr-qty">0</span>
+                        <button onclick="increment('eggfr-qty')">+</button>
                     </td>
                 </tr>
                 <tr>
-                    <td>Meals <br><img src="Images/Meals.jpg" alt="Meals"></td>
+                    <td class="item-name">Meals <br><img src="Images/Meals.jpg" alt="Meals"></td>
                     <td>50</td>
                     <td>
-                    <button onclick="decrement()">-</button>
-                        <span id="quantity">0</span>
-                    <button onclick="increment()">+</button>
+                    <button onclick="decrement('meals-qty')">-</button>
+                        <span id="meals-qty">0</span>
+                    <button onclick="increment('meals-qty')">+</button>
                 </td>
                 </tr>
                 <tr>
-                    <td>Coke <br><img src="Images/Coke.jpg" alt="Coke"></td>
+                    <td class="item-name">Coke <br><img src="Images/Coke.jpg" alt="Coke"></td>
                     <td>20</td>
                     <td>
-                        <button onclick="decrement()">-</button>
-                            <span id="quantity">0</span>
-                        <button onclick="increment()">+</button>
+                        <button onclick="decrement('coke-qty')">-</button>
+                            <span id="coke-qty">0</span>
+                        <button onclick="increment('coke-qty')">+</button>
                     </td>
                 </tr>
                                     
             </table>
         </div>
-
+        <script src="foodmenu.js"></script>
     </body>
 </html>
