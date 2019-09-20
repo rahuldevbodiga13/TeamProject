@@ -2,10 +2,12 @@
 <html>
     <head>
         <title>Taurus</title>
+        <link rel="icon" href="Images/WORK 02.png">
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="Style.css">
+        <link rel="stylesheet" type="text/css" href="RegisterStyle.css">
     </head>
     <body>
             <div id="mySidenav" class="sidenav">
@@ -22,7 +24,7 @@
                 
                   <div class="topnav">
                     <a class="active" href="#home"> <i class="fa fa-fw fa-home"></i>Home</a>
-                    <a href="registration.html"><i class="fa fa-fw fa-user"></i>Register</a>
+                    <button onclick="document.getElementById('form1').style.display='block'" style="width:auto;" class="btn-element"><i class="fa fa-fw fa-user"></i>Sign Up</button>
                     <a href="#contact"><i class="fa fa-fw fa-envelope"></i> Contact</a>
                     <a href="#about"><i class="fa fa-info-circle" aria-hidden="true"></i> About</a>
                   </div>    
@@ -37,7 +39,46 @@
                 Choose your 
 
             </div>
-            
+            <div id="form1" class="modal">
+                <span onclick="document.getElementById('form1').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <form class="modal-content animate" method="POST" action="Send_Data.php">
+                    <h1>Sign Up</h1>
+                    <div class="input-icons">
+                        <i class="fa fa-user icon"></i>
+                            <input class="input-field" type="text" name="Username" placeholder="Enter your Name">
+                    </div>
+                    <div class="input-icons">
+                        <i class="fa fa-key icon"></i>
+                        <input  class="input-field" type="password" name="password" placeholder="Enter password">
+                    </div>
+                    <div class="input-icons">
+                        <i class="fa fa-envelope icon"></i>
+                        <input class="input-field" type="email" name="email" placeholder="Enter your email">
+                    </div>
+                    <div class="input-icons">
+                        <i class="fa fa-mobile icon"></i>
+                        <input class="input-field" type="tel" name="mbn" placeholder="Enter your Mobile No.">
+                    </div>
+                    <div>
+                        <label>
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                        </label>
+                    </div>
+                        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                    <div>
+                        <input type="submit" value="Sign Up" class="btn btn-success btn-md " id="submit-btn">
+                    </div>
+                </form>
+            </div>
         <script src="Script.js"></script>
+        <script>
+             var modal = document.getElementById('form1');
+            
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
     </body>
 </html>
